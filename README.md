@@ -6,11 +6,11 @@
 - [Project Structure](#project-structure)
 - [Example Code](#example-code)
 - [Stopping the App](#stopping-the-app)
-- [License](#license)
 
 ## Installation
 
-### Prerequisites
-- Python 3.x
-- pip (Python package installer)
-- A terminal or command prompt
+### Step 1:
+python -m venv venv
+source venv/bin/activate  # For macOS/Linux
+# or
+venv\Scripts\activate     # For Windows
