@@ -12,6 +12,14 @@ python --version
 
 #### Make a New Folder for the Project
 
+```python
+mkdir flask_project
+```
+
+```python
+cd flask_project
+```
+
 #### Install the virtual environment
 
 ```python
@@ -21,10 +29,16 @@ pip3 install virtualenv
 virtualenv env
 ```
 
-### Step 2: Activate the env
+### Step 2: Activate the env 
 
+For Mac/Linux
 ```python
-source env/bin/activate
+source env/bin/activate 
+```
+
+For Windows
+```python
+.\env\Scripts\activate
 ```
 ### Step 3: Install the requirements
 
@@ -34,7 +48,7 @@ pip3 install flask
 
 ### Step 4: Create a new file called 'app.py'
 
-### Step 5: Working inside 'app.py'
+### Step 5: Adding code (Setting Up) inside 'app.py'
 
 ```python
 from flask import Flask
