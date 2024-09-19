@@ -1,50 +1,61 @@
 # Flask-Workshop-FOSS
 
-## Table of Contents
-- [Installation]
-- [Running the App Locally]
-- [Project Structure]
-- [Example Code]
-- [Stopping the App]
-
 ## Installation
 
 ### Step 1: Set up a virtual environment
 
+##### Check your Python version
+
 ```python
-python -m venv venv
+python --version
 ```
 
+#### Make a New Folder for the Project
+
+#### Install the virtual environment
+
 ```python
-source venv/bin/activate  # For macOS/Linux
+pip3 install virtualenv
+```
+```python
+virtualenv env
 ```
 
+### Step 2: Activate the env
+
 ```python
-venv\Scripts\activate     # For Windows
+source env/bin/activate
+```
+### Step 3: Install the requirements
+
+```python
+pip3 install flask
 ```
 
-### Step 2: Install the required packages
+### Step 4: Create a new file called 'app.py'
+
+### Step 5: Working inside 'app.py'
 
 ```python
-pip install -r requirements.txt
-```
-
-### Step 3: Running the App Locally
-
-```python
-python app.py
-```
-### Step 4: Example Code
-
-```python
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return render_template('index.html')
+def index():
+    return "Hello, World!"
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
 ```
+
+### Step 6: Run the environment
+
+```python
+python3 app.py
+```
+
+### Step 7: Stopping the environment
+
+Control + C
+
