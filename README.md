@@ -73,3 +73,24 @@ python3 app.py
 
 Control + C
 
+### Extra Info
+
+If your trying to create an index.html file and you want to link it to the app.py
+
+Create an index.html file and then change app.py to:
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+
+
