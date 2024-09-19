@@ -11,10 +11,12 @@
 
 ### Step 1: Set up a virtual environment
 
+```python
 python -m venv venv
 source venv/bin/activate  # For macOS/Linux
 # or
 venv\Scripts\activate     # For Windows
+```
 
 ### Step 2: Install the required packages
 pip install -r requirements.txt
