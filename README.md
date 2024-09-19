@@ -1,11 +1,11 @@
 # Flask-Workshop-FOSS
 
 ## Table of Contents
-- [Installation](#installation)
-- [Running the App Locally](#running-the-app-locally)
-- [Project Structure](#project-structure)
-- [Example Code](#example-code)
-- [Stopping the App](#stopping-the-app)
+- [Installation]
+- [Running the App Locally]
+- [Project Structure]
+- [Example Code]
+- [Stopping the App]
 
 ## Installation
 
@@ -13,16 +13,38 @@
 
 ```python
 python -m venv venv
-source venv/bin/activate  # For macOS/Linux
 ```
 
-# or
+```python
+source venv/bin/activate  # For macOS/Linux
+```
 
 ```python
 venv\Scripts\activate     # For Windows
 ```
 
 ### Step 2: Install the required packages
+
+```python
 pip install -r requirements.txt
+```
 
 ### Step 3: Running the App Locally
+
+```python
+python app.py
+```
+### Step 4: Example Code
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
